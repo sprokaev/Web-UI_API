@@ -1,18 +1,19 @@
 package com.demowebshop.tests.api.spec;
 
-import com.demowebshop.config.AppConfig;
+import com.demowebshop.steps.ApiSteps;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.with;
 import static com.demowebshop.filter.CustomLogFilter.customLogFilter;
+import static io.restassured.RestAssured.with;
 
 
 public class Specification {
+
+    public ApiSteps apiSteps = new ApiSteps();
 
     public static RequestSpecification request = with()
             .filter(customLogFilter().withCustomTemplates())
