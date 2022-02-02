@@ -8,7 +8,6 @@ import com.demowebshop.steps.ApiSteps;
 import com.demowebshop.steps.UiSteps;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
-import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -29,7 +28,7 @@ public class TestBase {
         Configuration.startMaximized = true;
 //        RestAssured.baseURI = config.baseURI();
         Configuration.baseUrl = config.baseUrl();
-        Configuration.remote = config.remoteDriverUrl();
+        Configuration.remote = System.getProperty("remoteUrl");
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
