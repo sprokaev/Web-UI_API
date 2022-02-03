@@ -11,8 +11,8 @@
       "allureFolder": "allure-report/",
       "allureLinkPath": "allure",
       "chart": true,
-      "chartName": "",
-      "project": ""
+      "chartName": "demowebshop",
+      "project": "demowebshop"
     },
     "mail": {
       "host": "",
