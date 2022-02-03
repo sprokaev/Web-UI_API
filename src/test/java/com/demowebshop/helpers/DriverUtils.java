@@ -32,7 +32,7 @@ public class DriverUtils {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = App.config.videoStorage() + sessionId + ".mp4";
+        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
