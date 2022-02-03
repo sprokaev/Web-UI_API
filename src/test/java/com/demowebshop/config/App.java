@@ -10,7 +10,7 @@ public class App {
         return !config.remoteDriverUrl().equals("");
     }
 
-    public static boolean isVideoTurnedOn() {
+    public static boolean isVideoOn() {
         return !config.videoStorage().equals("");
     }
 }
