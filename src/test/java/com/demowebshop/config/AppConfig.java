@@ -14,6 +14,6 @@ public interface AppConfig extends Config {
     @Key("remoteDriverUrl")
     String remoteDriverUrl();
 
-    @DefaultValue("")
+    @Key("videoStorage")
     String videoStorage();
 }
