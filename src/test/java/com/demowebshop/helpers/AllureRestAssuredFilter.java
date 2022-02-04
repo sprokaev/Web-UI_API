@@ -1,14 +1,14 @@
-package com.demowebshop.filter;
+package com.demowebshop.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 
-public class CustomLogFilter {
+public class AllureRestAssuredFilter {
     private static final AllureRestAssured FILTER = new AllureRestAssured();
 
-    private CustomLogFilter() {
+    private AllureRestAssuredFilter() {
     }
 
-    public static CustomLogFilter customLogFilter() {
+    public static AllureRestAssuredFilter customLogFilter() {
         return InitLogFilter.logFilter;
     }
 
@@ -20,6 +20,6 @@ public class CustomLogFilter {
     }
 
     private static class InitLogFilter {
-        private static final CustomLogFilter logFilter = new CustomLogFilter();
+        private static final AllureRestAssuredFilter logFilter = new AllureRestAssuredFilter();
     }
 }
