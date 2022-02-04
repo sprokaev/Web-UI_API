@@ -2,7 +2,7 @@ package com.demowebshop.models.ui;
 
 public enum CategoriesMenuEnum {
 
-    BOOKS("Books"),
+    BOOKS("Boks"),
     COMPUTERS("Computers"),
     ELECTRONICS("Electronics"),
     APPAREL_AND_SHOES("Apparel & Shoes"),
@@ -15,8 +15,4 @@ public enum CategoriesMenuEnum {
     CategoriesMenuEnum(String linkName) {
         this.linkName = linkName;
     }
-/*
-    public String getLinkName() {
-        return linkName;
-    }*/
 }
