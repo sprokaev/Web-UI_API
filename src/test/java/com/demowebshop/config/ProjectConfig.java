@@ -3,7 +3,7 @@ package com.demowebshop.config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({"classpath:config/env.properties"})
-public interface AppConfig extends Config {
+public interface ProjectConfig extends Config {
 
     @Key("baseUrl")
     String baseUrl();

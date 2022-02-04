@@ -1,6 +1,6 @@
 package com.demowebshop.models.ui;
 
-public enum NavigationMenuLinkEnum {
+public enum CategoriesMenuEnum {
 
     BOOKS("Books"),
     COMPUTERS("Computers"),
@@ -12,7 +12,7 @@ public enum NavigationMenuLinkEnum {
 
     public final String linkName;
 
-    NavigationMenuLinkEnum(String linkName) {
+    CategoriesMenuEnum(String linkName) {
         this.linkName = linkName;
     }
 /*

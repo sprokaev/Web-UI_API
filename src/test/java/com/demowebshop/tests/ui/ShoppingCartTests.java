@@ -4,10 +4,10 @@ import com.demowebshop.tests.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class AddProductToCartTests extends TestBase {
+public class ShoppingCartTests extends TestBase {
 
     @Test
-    @DisplayName("Добавление книги 'Fiction' в корзину новым пользователем")
+    @DisplayName("Проверка наличия книги 'Fiction' в корзине")
     void addBookFictionToCartByNewUserTest() {
         String cookie = apiSteps.addBookFictionToCart().cookie("Nop.customer");
         uiSteps.setCookieForUser(cookie);
