@@ -4,8 +4,6 @@ import com.demowebshop.tests.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class AddProductToCartTests extends TestBase {
 
     @Test
@@ -17,7 +15,6 @@ public class AddProductToCartTests extends TestBase {
         uiSteps.openUrl("/cart");
 
         uiSteps.checkProductCount(1);
-        sleep(5000);
     }
 
 }
