@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.Cookie;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
@@ -34,8 +35,8 @@ public class UiSteps {
 
     @Step("Проверка отображения ссылки '{linkName}' в блоке CATEGORIES")
     public void findLinkName(String linkName) {
-        $$(".list").findBy(exactText(linkName)).click();
-        $(".page-title").shouldHave(exactText(linkName));
+        $(".list").$(byText(linkName)).click();
+        $(".page-title").shouldHave(text(linkName));
     }
 }
 
