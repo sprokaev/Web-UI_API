@@ -2,8 +2,8 @@ package com.demowebshop.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.demowebshop.config.AppConfig;
-import com.demowebshop.helpers.Attachments;
+import com.demowebshop.config.ProjectConfig;
+import com.demowebshop.helpers.AllureAttachments;
 import com.demowebshop.steps.ApiSteps;
 import com.demowebshop.steps.UiSteps;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    public static final AppConfig config = ConfigFactory.create(AppConfig.class, System.getProperties());
+    public static final ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
 
     protected ApiSteps apiSteps = new ApiSteps();
     protected UiSteps uiSteps = new UiSteps();
@@ -31,15 +31,15 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = System.getProperty("remoteUrl");
+//        Configuration.remote = System.getProperty("remoteUrl");
     }
 
     @AfterEach
     public void addAttachments() {
-        Attachments.screenshotAs("Last screenshot");
-        Attachments.pageSource();
-        Attachments.browserConsoleLogs();
-        Attachments.addVideo();
+        AllureAttachments.screenshotAs("Last screenshot");
+        AllureAttachments.pageSource();
+        AllureAttachments.browserConsoleLogs();
+        AllureAttachments.addVideo();
         closeWebDriver();
     }
 }
