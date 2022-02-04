@@ -2,7 +2,7 @@ package com.demowebshop.models.ui;
 
 public enum CategoriesMenuEnum {
 
-    BOOKS("Boks"),
+    BOOKS("Books"),
     COMPUTERS("Computers"),
     ELECTRONICS("Electronics"),
     APPAREL_AND_SHOES("Apparel & Shoes"),
