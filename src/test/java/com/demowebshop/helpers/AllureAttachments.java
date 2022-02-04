@@ -13,7 +13,7 @@ import java.net.URL;
 import static com.codeborne.selenide.Selenide.sleep;
 
 public class AllureAttachments {
-    public static final Logger LOGGER = LoggerFactory.getLogger(AllureAttachments.class);
+    /*public static final Logger LOGGER = LoggerFactory.getLogger(AllureAttachments.class);
 
     @Attachment(value = "{attachName}", type = "text/plain")
     private static String addMessage(String attachName, String text) {
@@ -53,7 +53,7 @@ public class AllureAttachments {
             }
             Allure.addAttachment("Video", "video/mp4", videoInputStream, "mp4");
         }
-    }
+    }*/
 
 
 }

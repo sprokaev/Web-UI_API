@@ -15,7 +15,7 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 
 public class Attachments {
-    /*@Attachment(value = "{attachName}", type = "text/plain")
+    @Attachment(value = "{attachName}", type = "text/plain")
     public static String attachAsText(String attachName, String message) {
         return message;
     }
@@ -57,5 +57,5 @@ public class Attachments {
 
     public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
-    }*/
+    }
 }
