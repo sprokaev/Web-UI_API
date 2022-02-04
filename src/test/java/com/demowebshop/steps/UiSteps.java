@@ -1,12 +1,12 @@
 package com.demowebshop.steps;
 
+import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Cookie;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.value;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class UiSteps {
@@ -32,6 +32,11 @@ public class UiSteps {
         $(".search-box-text").setValue(searchByWord);
         $(".search-box-button").click();
         $(".search-results").shouldHave(text(searchByWord));
+    }
+
+    @Step("Поиск товаров по слову '{linkName}'")
+    public void findLinkName(String linkName) {
+        $$(".list").findBy(text(linkName));
     }
 }
 
