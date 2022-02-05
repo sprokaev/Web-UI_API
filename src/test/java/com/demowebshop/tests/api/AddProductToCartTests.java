@@ -1,10 +1,9 @@
 package com.demowebshop.tests.api;
 
 import com.demowebshop.tests.api.spec.Specification;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-@Disabled
+
 public class AddProductToCartTests extends Specification {
 
     @Test

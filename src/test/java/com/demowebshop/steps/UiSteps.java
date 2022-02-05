@@ -1,14 +1,19 @@
 package com.demowebshop.steps;
 
+import com.github.javafaker.Faker;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Cookie;
 
-import static com.codeborne.selenide.Condition.*;
+import java.util.Locale;
+
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class UiSteps {
+    Faker faker = new Faker(new Locale("en"));
 
     @Step("Открываю '{url}'")
     public void openUrl(String url) {
@@ -37,6 +42,27 @@ public class UiSteps {
     public void findLinkName(String linkName) {
         $(".list").$(byText(linkName)).click();
         $(".page-title").shouldHave(text(linkName));
+    }
+
+    @Step("Регистрация нового пользователя")
+    public void registrationUser() {
+        String firstName = faker.name().firstName();
+        String lastName = faker.name().lastName();
+        String email = faker.internet().emailAddress();
+
+
+        $("#gender-male").click();
+        $("#FirstName").setValue(firstName);
+        $("#LastName").setValue(lastName);
+        $("#Email").setValue(email);
+        $("#Password").setValue("UserTest");
+        $("#ConfirmPassword").setValue("UserTest");
+        $("#register-button").click();
+
+        $(".page-title").shouldHave(text("Register"));
+        $(".result").shouldHave(text("Your registration completed"));
+        $(".account").shouldHave(text(email));
+        sleep(2000);
     }
 }
 

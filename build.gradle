@@ -31,7 +31,8 @@ dependencies {
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "io.rest-assured:json-schema-validator:4.4.0",
-            "com.fasterxml.jackson.core:jackson-databind:2.11.2"
+            "com.fasterxml.jackson.core:jackson-databind:2.11.2",
+            "com.github.javafaker:javafaker:1.0.2"
     )
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:1.7.29",
