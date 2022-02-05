@@ -12,7 +12,7 @@ public class SearchStoreTests extends TestBase {
     @ValueSource(strings = {
             "Smarhone",
             "Create Your Own Jewelry",
-            "Ficion"})
+            "Fiction"})
     void SearchProductTest(String wordBySearch) {
         uiSteps.openUrl("");
         uiSteps.setSearchBox(wordBySearch);
