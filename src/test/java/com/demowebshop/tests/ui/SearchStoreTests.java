@@ -10,9 +10,9 @@ public class SearchStoreTests extends TestBase {
 
     @ParameterizedTest(name = "Поиск товаров по слову {0}")
     @ValueSource(strings = {
-            "Smartphone",
+            "Smarhone",
             "Create Your Own Jewelry",
-            "Fiction"})
+            "Ficion"})
     void SearchProductTest(String wordBySearch) {
         uiSteps.openUrl("");
         uiSteps.setSearchBox(wordBySearch);
