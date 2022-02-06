@@ -35,7 +35,6 @@
 ```
 gradle clean test 
 ```
-
 ### Для удаленного запуска тестов воспользуйтесь [Jenkins](https://jenkins.autotests.cloud/job/09_sprokaev_Web-UI_API/build?delay=0sec)
 ![Jenkins](./images/jenkins.png)
 
