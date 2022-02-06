@@ -35,11 +35,12 @@
 ```
 gradle clean test 
 ```
-### Видео-отчет о прохождении теста:
-![Selenoid](./images/video.gif)
 
 ### Для удаленного запуска тестов воспользуйтесь [Jenkins](https://jenkins.autotests.cloud/job/09_sprokaev_Web-UI_API/build?delay=0sec)
 ![Jenkins](./images/jenkins.png)
+
+### Видео-отчет о прохождении теста из Selenoid:
+![Selenoid](./images/video.gif)
 
 ### Результаты прохождения тестов в [Allure Report](https://jenkins.autotests.cloud/job/09_sprokaev_Web-UI_API/27/allure/)
 ![Allure1](./images/Allure-Report.png)
