@@ -1,6 +1,6 @@
 package com.demowebshop.steps;
 
-import com.demowebshop.models.api.BlueAndGreenSneakerModel;
+import com.demowebshop.models.api.products.BlueAndGreenSneakerModel;
 import com.demowebshop.tests.api.spec.Specification;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
