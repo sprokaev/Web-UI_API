@@ -1,4 +1,4 @@
-package com.demowebshop.models.api;
+package com.demowebshop.models.api.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
