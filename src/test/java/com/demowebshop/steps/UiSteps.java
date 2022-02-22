@@ -65,7 +65,3 @@ public class UiSteps {
         sleep(2000);
     }
 }
-
-
-
-

@@ -27,5 +27,4 @@ public class ShoppingCartTests extends TestBase {
 
         uiSteps.checkProductCount(1);
     }
-
 }
