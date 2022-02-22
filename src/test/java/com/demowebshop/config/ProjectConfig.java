@@ -9,11 +9,9 @@ import org.aeonbits.owner.Config;
 })
 public interface ProjectConfig extends Config {
 
-    @Key("baseUrl")
     @DefaultValue("http://demowebshop.tricentis.com")
     String baseUrl();
 
-    @Key("baseURI")
     @DefaultValue("http://demowebshop.tricentis.com")
     String baseURI();
 
@@ -26,17 +24,13 @@ public interface ProjectConfig extends Config {
     @DefaultValue("1920x1080")
     String browserSize();
 
-    @Key("remoteDriverUrl")
     @DefaultValue("")
     String remoteDriverUrl();
 
-    @Key("videoStorage")
     @DefaultValue("")
     String videoStorage();
 
-    @Key("login")
     String login();
 
-    @Key("password")
     String password();
 }
