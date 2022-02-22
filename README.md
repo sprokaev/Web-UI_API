@@ -21,7 +21,7 @@
 * [Gradle](https://gradle.org) - для сборки проекта
 * [JUnit 5](https://junit.org/junit5/) - для запуска тестов
 * [Selenide](https://selenide.org) - для тестирования UI
-* [REST-Assured](https://rest-assured.io) - для тестирования API
+* [Rest-Assured](https://rest-assured.io) - для тестирования API
 * [Jenkins](https://www.jenkins.io/) - для обеспечения процесса непрерывной интеграции
 * [Selenoid](https://aerokube.com/selenoid/) - для запуска UI тестов в [Docker containers](https://www.docker.com/resources/what-container)
 * [Jira](https://www.atlassian.com/software/jira) - для отслеживания задач
